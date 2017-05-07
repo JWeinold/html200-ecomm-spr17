@@ -51,7 +51,21 @@ img {
   max-height: 15rem;
   padding: 0px;
 }
+img { max-width: 100%; }
 
+   .photo-container {
+     width: 90%;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     /*justify-content: center;*/
+   }
+
+   .photo-frame {
+     /* equivalent to 49.5% of total browser width,
+     to make calculating srcset easier for us :) */
+     width: 55%;
+   }
 /***************** NAV *****************/
 
 nav a:hover {
