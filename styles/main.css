@@ -24,6 +24,12 @@ body {
     padding: 0px;
     /*border: 1px solid red;*/
 }
+[class*="col-6"] {
+    float: left;
+    padding: 0px;
+    height: 260px;
+    /*border: 1px solid red;*/
+}
 p {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: lighter;
@@ -149,4 +155,8 @@ h3 {
   text-align: center;
   color: #2d2d2d;
   padding-top: 20px;
+}
+.add-cart{
+  padding: 10px;
+  margin-left: 11px;
 }

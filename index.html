@@ -36,14 +36,18 @@
     <div class="col-4">
       <ul class="horizontal-list">
         <li class="cart-info">
+          <ul>
           <li class="fa fa-shopping-cart" aria-hidden="true"></li>
         </li>
+      </ul>
+      <li>
         <form onsubmit="functionSubmit(email);">
           <label>Sign up for our mailing list:
             <input type="email" name="email">
           </label>
           <input type="submit" value="Submit">
         </form>
+      </li>
       </ul>
     </div>
   </div>
@@ -52,7 +56,7 @@
       <h2>Scarves</h2>
       <div class="item-container">
         <div class="col-6">
-          <h3>Reversible Plaid</h3>
+          <div class="col-5">
           <div class="photo-container">
                 <div class="photo-frame">
                   <img srcset="images/reversible-plaid_400w.jpg 400w, images/reversible-plaid_300w.jpg 300w,images/reversible-plaid_200w.jpg 200w"
@@ -61,14 +65,17 @@
                         alt="reversible plaid scarf">
                 </div>
           </div>
+        </div>
           <!--<img src="images/reversible-plaid.jpg" alt="reversible plaid scarf">-->
-          <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
+          <div class="col-7">
+            <h3>Reversible Plaid</h3>
+            <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
           <div class="price">Price: $26.99</div>
+          <div class="add-cart"><input type="button" value="Add to cart" onclick="AddtoCart('Reversible Plaid',26.99)"/></div>
         </div>
       </div>
-
         <div class="col-6">
-          <h3>Fringed Plaid</h3>
+        <div class="col-5">
           <div class="photo-container">
                 <div class="photo-frame">
                   <img srcset="images/fringed-plaid_400w.jpeg 400w, images/fringed-plaid_300w.jpeg 300w,images/fringed-plaid_200w.jpeg 200w"
@@ -77,13 +84,17 @@
                         alt="fringed plaid scarf">
                 </div>
           </div>
-          <!--<img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf">-->
-          <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
-          <div class="price">Price: $18.99</div>
         </div>
-
+          <!--<img src="images/fringed-plaid.jpeg" alt="fringed plaid scarf">-->
+          <div class="col-7">
+            <h3>Fringed Plaid</h3>
+            <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+          <div class="price">Price: $18.99</div>
+          <div class="add-cart"><input type="button" value="Add to cart" onclick="AddtoCart('Fringed Plaid',18.99)"/></div>
+        </div>
+        </div>
         <div class="col-6">
-          <h3>Multi Color</h3>
+        <div class="col-5">
           <div class="photo-container">
                 <div class="photo-frame">
                   <img srcset="images/multi-color_400w.jpeg 400w, images/multi-color_300w.jpeeg 300w,images/multi-color_200w.jpg 200w"
@@ -92,13 +103,18 @@
                         alt="multi color scarf">
                 </div>
           </div>
+        </div>
           <!--<img src="images/multi-color.jpeg" alt="multi color scarf">-->
-          <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized. 100% acrylic.</p>
+            <div class="col-7">
+            <h3>Multi Color</h3>
+            <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized. 100% acrylic.</p>
           <div class="price">Price: $22.99</div>
+          <div class="add-cart"><input type="button" value="Add to cart" onclick="AddtoCart('Multi Color',22.99)"/></div>
+        </div>
         </div>
 
         <div class="col-6">
-          <h3>Northern Lights</h3>
+        <div class="col-5">
           <div class="photo-container">
                 <div class="photo-frame">
                   <img srcset="images/northern-lights_400w.jpg 400w, images/northern-lights_300w.jpg 300w,images/northern-lights_200w.jpg 200w"
@@ -107,13 +123,18 @@
                         alt="northern lights scarf">
                 </div>
           </div>
+        </div>
           <!--<img src="images/northern-lights.jpg" alt="northern lights scarf">-->
+        <div class="col-7">
+          <h3>Northern Lights</h3>
           <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
           <div class="price">Price: $29.99</div>
+          <div class="add-cart"><input type="button" value="Add to cart" onclick="AddtoCart('Northern Lights',29.99)"/></div>
         </div>
+      </div>
 
         <div class="col-6">
-          <h3>Ombre Infinity</h3>
+        <div class="col-5">
           <div class="photo-container">
                 <div class="photo-frame">
                   <img srcset="images/ombre-infinity_400w.jpg 400w, images/ombre-infinity_300w.jpg 300w,images/ombre-infinity_200w.jpg 200w"
@@ -122,14 +143,19 @@
                         alt="ombre infinity scarf">
                 </div>
           </div>
+        </div>
           <!--<img src="images/ombre-infinity.jpg" alt="ombre infinity scarf">-->
+          <div class="col-7">
+          <h3>Ombre Infinity</h3>
           <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
           <div class="price">Price: $11.99</div>
+          <div class="add-cart"><input type="button" value="Add to cart" onclick="AddtoCart('Ombre Infinity',11.99)"/></div>
         </div>
+      </div>
 
         <div class="col-6">
-          <h3>Ashby Twill</h3>
-          <div class="photo-container">
+        <div class="col-5">
+            <div class="photo-container">
                 <div class="photo-frame">
                   <img srcset="images/twill_400w.jpg 400w, images/twill_300w.jpg 300w,images/twill_200w.jpg 200w"
                         sizes="(max-width: 400px) 200px, (max-width: 1600px) 300px, (min-width: 1601px) 400px"
@@ -137,14 +163,19 @@
                         alt="ashby twill scarf">
                 </div>
           </div>
+      </div>
           <!--<img src="images/twill.jpg" alt="ashby twill scarf">-->
+        <div class="col-7">
+          <h3>Ashby Twill</h3>
           <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
-          <div class="price">Price: $70.99</div>
+        <div class="price">Price: $70.99</div>
+          <div class="add-cart"><input type="button" value="Add to cart" onclick="AddtoCart('Ashby Twill',70.99)"/></div>
         </div>
+      </div>
 
         <div class="col-6">
-          <h3>Wool Cable Knit</h3>
-          <div class="photo-container">
+        <div class="col-5">
+              <div class="photo-container">
                 <div class="photo-frame">
                   <img srcset="images/wool-cable_400w.jpeg 400w, images/wool-cable_300w.jpeg 300w,images/wool-cable_200w.jpeg 200w"
                         sizes="(max-width: 400px) 200px, (max-width: 1600px) 300px, (min-width: 1601px) 400px"
@@ -152,13 +183,18 @@
                         alt="wool cable knit scarf">
                 </div>
           </div>
+      </div>
           <!--<img src="images/wool-cable.jpeg" alt="wool cable knit scarf">-->
+      <div class="col-7">
+          <h3>Wool Cable Knit</h3>
           <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
-          <div class="price">Price: $49.99</div>
-        </div>
+        <div class="price">Price: $49.99</div>
+          <div class="add-cart"><input type="button" value="Add to cart" onclick="AddtoCart('v',49.99)"/></div>
+          </div>
+      </div>
 
         <div class="col-6">
-          <h3>Etro Paisley-Print Silk</h3>
+        <div class="col-5">
           <div class="photo-container">
                 <div class="photo-frame">
                   <img srcset="images/etro_400w.png 400w, images/etro_300w.png 300w,images/etro_200w.png 200w"
@@ -167,11 +203,14 @@
                         alt="etro paisley print silk scarf">
                 </div>
           </div>
+        </div>
           <!--<img src="images/etro.png" alt="etro paisley print silk scarf">-->
+      <div class="col-7">
+          <h3>Etro Paisley-Print Silk</h3>
           <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
           <div class="price">Price: $26.99</div>
-        </div>
-
+          <div class="add-cart"><input type="button" value="Add to cart" onclick="AddtoCart('Etro Paisley-Print Silk',26.99)"/></div>
+          </div>
       </div>
     </section>
   </main>

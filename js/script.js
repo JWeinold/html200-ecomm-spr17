@@ -1,10 +1,30 @@
-
-
-
 function functionSubmit(email) {
   var email;
   alert("Thank you for signing up for our mailing list " + email.value + "!");
 }
+
+var shoppingCart = [];
+
+function AddtoCart(name,price){
+  var singleProduct = {};
+    //Fill the product object with data
+    singleProduct.Name=name;
+    singleProduct.Price=price;
+     //Add newly created product to our shopping cart
+     shoppingCart.push(singleProduct);
+     //call display function to show on screen
+     displayShoppingCart();
+
+  }
+     function displayShoppingCart(){
+       if(shoppingCart.length < 4){
+         alert('Thank you for ordering.  You now have '+ shoppingCart.length + ' in your shopping cart!');
+        /*console.log('Thank you for ordering.  You now have '+ shoppingCart.length + ' in your shopping cart!');*/
+       }
+       else {
+         alert('WOW!  You must love our scarfs!  Thank you for ordering.  You now have '+ shoppingCart.length + ' in your shopping cart!');
+       }
+         }
 
 var products = [
   {
