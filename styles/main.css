@@ -84,8 +84,20 @@ ul.horizontal-list {
   overflow: hidden;
   background-color: #333;
 }
-ul.horizontal-list li {
+@media (min-width: 401px) {
+  ul.horizontal-list li {
   float: left;
+  }
+}
+@media (max-width: 400px) {
+ul.horizontal-list li {
+  background-color: rgba(102, 196, 58, 0.2);
+  padding: 1rem;
+  width: 24.8%;
+  list-style: none;
+  display: block;
+  font-weight: lighter;
+}
 }
 ul.horizontal-list li a {
   display: block;
