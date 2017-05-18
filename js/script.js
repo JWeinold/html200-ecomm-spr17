@@ -18,7 +18,7 @@ function AddtoCart(name,price){
   }
      function displayShoppingCart(){
        if(shoppingCart.length < 4){
-         alert('Thank you for ordering.  You now have '+ shoppingCart.length + ' in your shopping cart!');
+         alert('Thank you for ordering.  You now have '+ shoppingCart.length + ' in your shopping cart!');         
         /*console.log('Thank you for ordering.  You now have '+ shoppingCart.length + ' in your shopping cart!');*/
        }
        else {
